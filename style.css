@@ -1,0 +1,38 @@
+/* @override http://looce.com/ud/style.css */
+
+body{
+	font-family: "Helvetica Neue", Helvetica, Arial,  Geneva, sans-serif;
+	color: #666666;
+	font-size: 62.5%;
+}
+
+#wrapper {
+	padding-top: 40px;
+}
+
+#description {
+	width: 300px;
+	margin: 0 auto;
+	font-size: 2em;
+}
+a {
+	font-weight: bold;
+	color: #555555;
+	text-decoration: none;
+}
+
+a:hover {
+	color: #222222;
+}
+
+#result {
+	text-align: center;
+	font-size: 20em;
+	font-weight: bold;
+}
+
+.button {
+	font-size: 2em;
+	text-align: center;
+	display: block;
+}
