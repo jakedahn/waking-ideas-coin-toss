@@ -1,5 +1,9 @@
-/* @override http://looce.com/ud/style.css */
 
+
+html, body{
+	width:300px;
+	margin:0 auto 0;
+}
 body{
 	font-family: "Helvetica Neue", Helvetica, Arial,  Geneva, sans-serif;
 	color: #666666;
@@ -7,13 +11,13 @@ body{
 }
 
 #wrapper {
-	padding-top: 40px;
+	padding-top:40px;
+	padding-bottom:10px;
 }
-
 #description {
 	width: 300px;
 	margin: 0 auto;
-	font-size: 2em;
+	font-size: 1.8em;
 }
 a {
 	font-weight: bold;
@@ -27,16 +31,17 @@ a:hover {
 
 #result {
 	text-align: center;
-	font-size: 20em;
+	font-size: 9em;
 	font-weight: bold;
+	margin-bottom:20px;
 }
 
 .tie {
-	font-size: 10em;
+	font-size: 4.2em !important;
 }
 
 .button {
-	font-size: 2em;
+	font-size: 1.8em;
 	text-align: center;
 	display: block;
 }
