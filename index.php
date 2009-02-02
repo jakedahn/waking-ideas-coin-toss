@@ -28,6 +28,6 @@
                 <a href="/result.php">Click here to toss 10,000 coins.</a>
             </span>
         </div>
-        <!--<script src="http://wakingideas.com/mint/?js" type="text/javascript"></script>-->
+        <script src="http://wakingideas.com/mint/?js" type="text/javascript"></script>
     </body>
 </html>
