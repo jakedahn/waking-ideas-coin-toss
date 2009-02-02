@@ -23,7 +23,7 @@
             <div id="result" <?php if($tie) { ?>class="tie"<?php } ?>>
             	<?php echo $result; ?>
             </div>
-            <span class="button"><a href="/">Return.</a> | <a href="results.php">Flip again.</a></span>
+            <span class="button"><a href="/">Return.</a> | <a href="result.php">Flip again.</a></span>
         </div>
     </body>
 </html>
