@@ -8,23 +8,18 @@
         <meta name="Robots" content="index,all" />
         <meta name="Keywords" content="coin, toss, waking ideas, probability" />
         <meta name="Description" content="Waking Ideas 10,000 trial coin toss" />
-        <?php if (stristr($_SERVER['HTTP_USER_AGENT'], "iPhone")) { ?>
-		<meta name="viewport" content="width=320; initial-scale=0.8; maximum-scale=0.8; user-scalable=0;"/>
-		<link rel="stylesheet" href="iphone.css" type="text/css" media="screen" />
-		<?php } else { ?>
-		<link rel="stylesheet" href="style.css" type="text/css" media="screen" />
-		<?php } ?>
+        <link rel="stylesheet" href="style.css" type="text/css" media="screen" />
     </head>
 
 
     <body>
         <div id="wrapper">
-			<?php include 'toss.php'; ?>
-            <div id="result" <?php if($tie) { ?>class="tie"<?php } ?>>
-            	<?php echo $result; ?>
+            <div id="result">
+                <?php include 'toss.php'; ?>
+                
             </div>
-            <span class="button"><a href="/">Return.</a></span>
+            <span class="button"><a href="http://cointoss.wakingideas.com/">Return.</a></span>
         </div>
-        <!--<script src="http://wakingideas.com/mint/?js" type="text/javascript"></script>-->
+        <script src="http://wakingideas.com/mint/?js" type="text/javascript"></script>
     </body>
 </html>

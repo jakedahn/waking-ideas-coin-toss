@@ -4,7 +4,7 @@ $Array = array();
 for ($i=0; $i < 10000; $i++) { 
     $Array[$i] = mt_rand(0,1);
 }
-$results = array(0,1);
+
 for($c = 0; $c < count($Array); $c++)
 {
   
@@ -19,17 +19,14 @@ for($c = 0; $c < count($Array); $c++)
 }
 if($results[0] > $results[1])
 {
-	$tie = FALSE;
-  $result = "Heads.";
+  echo "Heads.";
 }
 else if($results[0] < $results[1])
 {
-	$tie = FALSE;
-  $result = "Tails.";
+  echo "Tails.";
 }
 else
 {
-	$tie = TRUE;
-  $result = "Undetermined, please try again.";
+  echo "Undetermined, please try again.";
 }
 ?>
