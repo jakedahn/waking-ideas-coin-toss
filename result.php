@@ -25,6 +25,6 @@
             </div>
             <span class="button"><a href="/">Return.</a></span>
         </div>
-        <!--<script src="http://wakingideas.com/mint/?js" type="text/javascript"></script>-->
+        <script src="http://wakingideas.com/mint/?js" type="text/javascript"></script>
     </body>
 </html>
