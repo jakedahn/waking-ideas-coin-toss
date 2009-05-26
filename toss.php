@@ -1,37 +1,26 @@
 <?php
 
-$Array = array();
-for ($i=0; $i < 10000; $i++) { 
-    $Array[$i] = mt_rand(0,1);
-}
-$results = array(0,1);
-for($c = 0; $c < count($Array); $c++)
-{
-  
-  if($Array[$c] == "0")
-  {
-    $results[0] = $results[0] + 1;
-  }
-  else
-  {
-    $results[1] = $results[1] + 1;
-  }
-}
-if($results[0] > $results[1])
-{
-	$tie = FALSE;
-  $result = "Heads.";
-}
-else if($results[0] < $results[1])
-{
-	$tie = FALSE;
-  $result = "Tails.";
-}
-else
-{
-	$tie = TRUE;
-  $result = "Undetermined, please try again.";
-}
+    include('htmlDom.php');
+
+    $html = file_get_html('http://www.random.org/integers/?num=10000&min=0&max=1&col=1&base=10&format=html&rnd=new');
+
+    // Grabs contents of pre tag
+    foreach($html->find('pre') as $element)
+        $numString = $element->plaintext;
+
+    $replaceOnes = str_replace("0", "",$numString, $i);
+    $heads = $i;
+    $tails = 10000 - $heads;
+
+    if($heads > $tails){
+        $result = "Heads.";
+    }
+    else if($heads < $tails){
+        $result = "Tails.";
+    }
+    else if($heads == $tails){
+        $result = "Undetermined, please try again.";
+    }
 
 
 
