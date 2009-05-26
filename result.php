@@ -24,6 +24,11 @@
             	<?php echo $result; ?>
             </div>
             <span class="button"><a href="/">Return.</a> | <a href="result.php">Flip again.</a></span>
+            <div id="resultCount">
+                <span class="heads"><span class="text">Heads:</span> <?=print_r($results[0]); ?></span>
+                <span class="tails"><span class="text">Tails:</span> <?=print_r($results[1]); ?></span>
+            </span>
+            
         </div>
     </body>
 </html>

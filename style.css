@@ -40,3 +40,17 @@ a:hover {
 	text-align: center;
 	display: block;
 }
+
+#resultCount {
+    padding: 25px;
+    margin-top: 50px !important;
+    border: 1px dotted #cccccc;
+    width: 150px;
+    margin: 0 auto;
+    text-align: center;
+    font-size: 12px;
+}
+
+#resultCount span.text {
+    font-weight: bold;
+}
